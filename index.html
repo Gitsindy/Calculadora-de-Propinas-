@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="calc">
+        <div class="cabec">
+          <p>
+           Calculadora de Propinas
+          </p>
+        </div>
+        <div class="cuer">
+           <p> Total de la Cuenta <br>
+             <input type="number" id="totalC"> </p> <br>
+             <p> Porcentaje de las Propinas  <br>
+              <input type="number" id="porcen"> </p> 
+              <br>
+              <button class="btn" onclick="calcular();"> Calcular</button>
+
+              <div class="res"> <h1 class="titulo"> RESUMEN</h1>
+                <div class="cun"> Total de la Cuenta:  $ </div> <span id="tc">  </span>
+                 <br>
+                 <br>
+                 <div class="pro"> propina:  $ </div> <span id="pr">  </span>
+                 <br>
+                 <br>
+                <div class="tp"> Total a Pagar: $ </div> <span id="pgr">  </span>
+              </div>
+        </div>
+   </div>
+  <script src="script.js"></script>
+</body>
+</html>
