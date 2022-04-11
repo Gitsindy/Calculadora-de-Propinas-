@@ -16,9 +16,9 @@
         </div>
         <div class="cuer">
            <p> Total de la Cuenta <br>
-             <input class="inputFormu" type="number" id="totalC"  > </p> <br>
+             <input class="inputFormu" type="number" id="totalC"  min="1" pattern="^[0-9]+" > </p> <br>
              <p> Porcentaje de las Propinas  <br>
-              <input class="inputFormu" type="number" id="porcen" > </p> 
+              <input class="inputFormu" type="number" id="porcen"  min="1" pattern="^[0-9]+" > </p> 
               <br>
               <button class="btn" onclick="calcular();"> Calcular</button>
               <div class="res"> <h1 class="titulo"> RESUMEN</h1>
@@ -32,6 +32,7 @@
               </div>
         </div>
    </div>
+   <div id="msg"></div>
   <script src="script.js"></script>
 </body>
 </html>
